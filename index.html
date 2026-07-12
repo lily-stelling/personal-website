@@ -4,9 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Lily Stelling</title>
-<meta name="description" content="Lily Stelling — AI safety. Technical Officer in the A3 AI Safety Unit, EU AI Office; Rhodes Scholar, University of Oxford.">
+<meta name="description" content="Lily Stelling — AI safety. Technical Officer in the AI Safety Unit, EU AI Office; Rhodes Scholar, University of Oxford.">
 <meta property="og:title" content="Lily Stelling">
-<meta property="og:description" content="AI safety. Technical Officer in the A3 AI Safety Unit, EU AI Office; Rhodes Scholar, University of Oxford.">
+<meta property="og:description" content="AI safety. Technical Officer in the AI Safety Unit, EU AI Office; Rhodes Scholar, University of Oxford.">
 <meta property="og:url" content="https://stelling.ai">
 <meta property="og:image" content="https://stelling.ai/profile.png">
 <style>
@@ -18,11 +18,11 @@
     --rule: #dddddd;
   }
   [data-theme="dark"] {
-    --bg: #121212;
-    --ink: #e6e6e6;
-    --muted: #9a9a9a;
-    --accent: #8ab4f8;
-    --rule: #333333;
+    --bg: #171320;          /* dark purple */
+    --ink: #e6e4ee;
+    --muted: #9a97a6;
+    --accent: #93aae8;
+    --rule: #2e2a3a;
   }
   * { margin: 0; padding: 0; box-sizing: border-box; }
   html { color-scheme: light dark; }
@@ -59,18 +59,26 @@
     outline-offset: 2px;
   }
   .headshot {
-    width: 108px;
-    height: 108px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     object-fit: cover;
     display: block;
-    margin-bottom: 1.75rem;
+    margin: 0 auto 1.75rem;
   }
   h1 {
     font-weight: 700;
     font-size: 2.1rem;
     letter-spacing: -0.01em;
     margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  h2 {
+    font-weight: 700;
+    font-size: 1.25rem;
+    margin: 2.5rem 0 1rem;
+    padding-top: 1.4rem;
+    border-top: 1px solid var(--rule);
   }
   /* The signature: a dictionary entry */
   .entry {
@@ -88,6 +96,18 @@
   p { margin-bottom: 1.1rem; }
   a { color: var(--accent); text-decoration: underline; text-underline-offset: 3px; }
   a:hover { text-decoration: none; }
+  .edu-item, .work-item { margin-bottom: 1.1rem; }
+  .edu-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  .edu-row .degree { font-weight: 700; }
+  .edu-row .year { color: var(--muted); white-space: nowrap; }
+  .edu-item .inst { color: var(--muted); }
+  .work-item .venue { color: var(--muted); }
+  .work-item .authors { color: var(--muted); font-size: 0.95rem; }
+  .work-item .authors .me { color: var(--ink); font-weight: 700; }
   .links {
     margin-top: 2.25rem;
     padding-top: 1.4rem;
@@ -125,28 +145,66 @@
     <span class="sense-num">3.</span> scaffolding.
   </div>
 
-  <p>I&rsquo;m Lily. I work on AI safety at the
+  <p>My name is Lily. I currently work in the AI Safety Unit at the
   <a href="https://digital-strategy.ec.europa.eu/en/policies/ai-office">European AI Office</a>,
-  where I&rsquo;m a Technical Officer in the A3 AI Safety Unit, focusing on the safety and
-  security of general-purpose AI models.</p>
+  as a Technical Officer for enforcing the
+  <a href="https://code-of-practice.ai/?section=safety-security">General-Purpose AI Code of
+  Practice (Safety and Security Chapter)</a>. In short, I figure out what companies should
+  be doing. I&rsquo;m fortunate to be a
+  <a href="https://www.rhodeshouse.ox.ac.uk/">Rhodes Scholar</a>, where I&rsquo;ll pursue a
+  DPhil as an affiliate with the
+  <a href="https://aigi.ox.ac.uk/">Oxford Martin AI Governance Initiative</a>.</p>
 
-  <p>I think AI is the most important technology of our time, and that making it go well
-  is one of the most important problems of our time. That belief shapes most of what I
-  choose to work on.</p>
+  <p>I believe that if AI automates much of society&rsquo;s scientific and technological
+  research, it could be wild, for better or worse.</p>
 
-  <p>I&rsquo;m fortunate to be a <a href="https://www.rhodeshouse.ox.ac.uk/">Rhodes Scholar</a>,
-  reading for a DPhil in Engineering Science at the University of Oxford on the evaluation
-  of frontier AI systems.</p>
+  <p>Before the AI Office, I lived in New Zealand and Australia, where I studied mathematics,
+  economics and philosophy as a Kahotea Scholar and graduated as the
+  <a href="https://www.wgtn.ac.nz/hppi/philosophy/prizes-and-scholarships/philosophy-prizewinners">top
+  Philosophy student</a>.</p>
 
-  <p>My background is in mathematics, economics, and philosophy. I co-founded
-  <a href="#">Make It 16</a>, a youth voting-rights campaign in New Zealand. I grew up
-  between the Netherlands and New Zealand, and I&rsquo;ve lived in many places along the
-  way &mdash; including Brussels, London, Brisbane, Wellington, and Berkeley.</p>
+  <h2>Education</h2>
+
+  <div class="edu-item">
+    <div class="edu-row">
+      <span class="degree">DPhil in Engineering Science</span>
+      <span class="year">2026&ndash;</span>
+    </div>
+    <div class="inst">University of Oxford &middot; Rhodes Scholar &middot; Technical AI Governance Studentship, Oxford Martin AI Governance Initiative</div>
+  </div>
+
+  <div class="edu-item">
+    <div class="edu-row">
+      <span class="degree">BSc(Hons) in Mathematics</span>
+      <span class="year">2024&ndash;2025</span>
+    </div>
+    <div class="inst">University of Queensland &middot; thesis on abductive explanations in first-order logic, with applications in explainable AI</div>
+  </div>
+
+  <div class="edu-item">
+    <div class="edu-row">
+      <span class="degree">BA/BSc in Mathematics, Philosophy, and Economics</span>
+      <span class="year">2018&ndash;2023</span>
+    </div>
+    <div class="inst">Victoria University of Wellington &middot; Kahotea Scholar</div>
+  </div>
+
+  <h2>Selected Work</h2>
+
+  <div class="work-item">
+    <div><a href="https://europe2031.ai/"><em>Europe 2031</em></a> <span class="venue">&middot; 2026 &middot; covered in Bloomberg, Handelsblatt, S&uuml;ddeutsche Zeitung, and Semafor</span></div>
+    <div class="authors">Daan Juijn, Stan van Baarsen, Judith Dada, Maximilian Negele, <span class="me">Lily Stelling</span>, Philip Fox, Alex Petropoulos, Michiel Bakker</div>
+  </div>
+
+  <div class="work-item">
+    <div><a href="https://tracker.safer-ai.org/"><em>SaferAI Frontier Risk Management Ratings</em></a> <span class="venue">&middot; 2025 &middot; covered in TIME and The Guardian</span></div>
+    <div class="authors"><span class="me">Lily Stelling</span>, Malcolm Murray, Henry Papadatos, Sim&eacute;on Campos</div>
+  </div>
 
   <div class="links">
     <a href="#" id="email-link">Email</a> &middot;
-    <a href="https://linkedin.com/in/YOUR-HANDLE">LinkedIn</a> &middot;
-    <a href="https://scholar.google.com/citations?user=YOUR-ID">Google Scholar</a>
+    <a href="https://www.linkedin.com/in/lily-stelling/">LinkedIn</a> &middot;
+    <a href="https://scholar.google.com/citations?user=W1G1LvwAAAAJ&amp;hl=en">Google Scholar</a>
   </div>
 
   <footer>&copy; 2026 Lily Stelling</footer>
